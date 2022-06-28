@@ -1,11 +1,15 @@
 #include <stdio.h>
 
+#define LOWER 0
+#define UPPER 300
+#define STEP 20
+
 int main(void) {
 
 int fahrenheit;
 
-for (fahrenheit = 0; fahrenheit <= 300; fahrenheit = fahrenheit + 20) {
+for (fahrenheit = LOWER; fahrenheit <= UPPER; fahrenheit = fahrenheit + STEP) {
     printf("%3d %6.1f\n", fahrenheit, (5.0/9.0)*(fahrenheit - 32));
     }
 
-}
+} 
