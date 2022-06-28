@@ -2,7 +2,7 @@
 
 int main(void) {
 
-  int fahrenheit, celcius;
+  float fahrenheit, celcius;
   int lower, upper, step;
 
   lower = 0;
@@ -12,8 +12,9 @@ int main(void) {
   fahrenheit = lower;
   printf("Fahrenheit: \t Celcius:\n");
   while (fahrenheit <= upper) {
-    celcius = 5 * (fahrenheit - 32) / 9;
-    printf("%d \t\t %d \n", fahrenheit, celcius);
+    celcius = (5.0/9.0) * (fahrenheit - 32.0);
+    printf("%0.2f \t\t %0.2f \n", fahrenheit, celcius);
     fahrenheit = fahrenheit + step;
+
   }
 }
