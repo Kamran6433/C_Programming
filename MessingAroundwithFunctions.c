@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// This here declares all the functions before I initialise them.
 int power(int a, int b);
 int timesByItself(int a[]);
 float dividingBy5(float a[]);
