@@ -7,7 +7,12 @@ int helloWorld();
 
 int main(void) {
 
+    int a, b, c, d;
     int numbers[5] = {1, 2, 3, 4, 5};
+    // timesByItself(numbers);
+    a = 4;
+    d = 2;
+    printf("Power function: %d", power(a, d));
 
 }
 
@@ -31,9 +36,12 @@ int power(int a, int b) {
 
 int timesByItself(int a[]) {
 
-    for (int i = 0; i < sizeof(a); i++) {
+    // Here im getting the length of the array using this operation.
+    int size = sizeof a / sizeof *a;
+    for (int i = 0; i < size; i++) {
         a[i] = a[i] * a[i];
     }
     
+
 
 }
