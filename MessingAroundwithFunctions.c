@@ -8,7 +8,7 @@ int helloWorld();
 int main(void) {
 
     int a, b, c, d;
-    int numbers[5] = {1, 2, 3, 4, 5};
+    int numbers[] = {1, 2, 3, 4, 5};
     // timesByItself(numbers);
     a = 4;
     d = 2;
@@ -25,7 +25,8 @@ int main(void) {
  */
 int power(int a, int b) {
 
-    int i, power;
+    int i;
+    int power = 1;
     for (i = 1; i <= b; ++i) {
         power = power * a;
     }
