@@ -9,9 +9,9 @@ int main(void) {
 
     int a, b, c, d;
     int numbers[] = {1, 2, 3, 4, 5};
-    // timesByItself(numbers);
-    a = 4;
-    d = 2;
+    timesByItself(numbers);
+    a = 2;
+    d = 10;
     printf("Power function: %d", power(a, d));
 
 }
@@ -38,11 +38,13 @@ int power(int a, int b) {
 int timesByItself(int a[]) {
 
     // Here im getting the length of the array using this operation.
+    // I dont think the operation to get the size of the array works.
     int size = sizeof a / sizeof *a;
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < 5; i++) {
         a[i] = a[i] * a[i];
+        printf("%d\n", a[i]);
     }
     
-
+    return a;
 
 }
