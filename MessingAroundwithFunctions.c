@@ -2,7 +2,7 @@
 
 int power(int a, int b);
 int timesByItself(int a[]);
-int dividingBy5();
+float dividingBy5(float a[]);
 int helloWorld();
 
 int main(void) {
@@ -10,6 +10,8 @@ int main(void) {
     int a, b, c, d;
     int numbers[] = {1, 2, 3, 4, 5};
     timesByItself(numbers);
+    float floatingNumbers[] = {5.0, 10.0, 15.0, 20.0};
+    dividingBy5(floatingNumbers);
     a = 2;
     d = 10;
     printf("Power function: %d", power(a, d));
@@ -18,7 +20,7 @@ int main(void) {
 
 /**
  * @brief 
- * This function takes two integers to perform a to the power of b
+ * This function takes two integers to perform a to the power of b.
  * @param a is the base.
  * @param b is the power raised.
  * @return int 
@@ -35,16 +37,43 @@ int power(int a, int b) {
 
 }
 
+/**
+ * @brief 
+ * This function takes an array and multiplies every number in the array 
+ * by itself so squaring each element in the given array.
+ * @param a is the array argument passed into this function.
+ * @return int 
+ */
 int timesByItself(int a[]) {
 
     // Here im getting the length of the array using this operation.
     // I dont think the operation to get the size of the array works.
-    int size = sizeof a / sizeof *a;
+    // int size = sizeof a / sizeof *a;
     for (int i = 0; i < 5; i++) {
         a[i] = a[i] * a[i];
-        printf("%d\n", a[i]);
+        printf("Int: %d\n", a[i]);
     }
     
-    return a;
+    return 0;
+
+}
+
+/**
+ * @brief 
+ * This function takes an array and divides every number in the array by 5.
+ * @param a is the array argument passed into this function. 
+ * @return float 
+ */
+float dividingBy5(float a[]) {
+
+    // Here im getting the length of the array using this operation.
+    // I dont think the operation to get the size of the array works.
+    // int size = sizeof a / sizeof *a;
+    for (int i = 0; i < 4; i++) {
+        a[i] = a[i] / 5.0;
+        printf("Float: %f\n", a[i]);
+    }
+    
+    return 0;
 
 }
