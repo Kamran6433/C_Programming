@@ -3,10 +3,11 @@
 int power(int a, int b);
 int timesByItself(int a[]);
 float dividingBy5(float a[]);
-int helloWorld();
+int helloWorld(void);
 
 int main(void) {
 
+    helloWorld();
     int a, b, c, d;
     int numbers[] = {1, 2, 3, 4, 5};
     timesByItself(numbers);
@@ -74,6 +75,19 @@ float dividingBy5(float a[]) {
         printf("Float: %f\n", a[i]);
     }
     
+    return 0;
+
+}
+
+/**
+ * @brief 
+ * This function prints Hello World.
+ * @return int 
+ */
+int helloWorld(void) {
+
+    printf("Hello World!\n");
+
     return 0;
 
 }
