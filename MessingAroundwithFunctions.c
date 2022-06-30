@@ -4,7 +4,7 @@
 int power(int a, int b);
 int timesByItself(int a[]);
 float dividingBy5(float a[]);
-int helloWorld(void);
+void helloWorld();
 
 int main(void) {
 
@@ -85,10 +85,8 @@ float dividingBy5(float a[]) {
  * This function prints Hello World.
  * @return int 
  */
-int helloWorld(void) {
+void helloWorld() {
 
     printf("Hello World!\n");
-
-    return 0;
 
 }
