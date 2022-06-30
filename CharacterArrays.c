@@ -37,20 +37,21 @@ main() {
 }
 
 // getLine: read a line into s, return length.
-int getLine(char s[], int lim) {
+int getLine(void) {
 
     int c, i;
+    extern char line[];
 
-    for (i = 0; i < lim -1 && (c = getchar()) != EOF && c != '\n'; ++i) {
-        s[i] = c;
+    for (i = 0; i < MAXLINE - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
+        line[i] = c;
     }
 
     if (c == '\n') {
-        s[i] = c;
+        line[i] = c;
         ++i;
     }
 
-    s[i] = '\0';
+    line[i] = '\0';
     return i;
 
 }
