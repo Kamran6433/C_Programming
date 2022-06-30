@@ -57,12 +57,13 @@ int getLine(void) {
 }
 
 // copy: copy 'from' into 'to'; assuming to is big enough.
-void copy(char to[], char from[]) {
+void copy(void) {
 
     int i;
+    extern char line[], longest[];
 
     i = 0;
-    while ((to[i] = from[i]) != '\0') {
+    while ((longest[i] = line[i]) != '\0') {
         ++i;
     }
 
