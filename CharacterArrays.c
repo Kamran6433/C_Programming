@@ -24,6 +24,7 @@ main() {
 
     if (max > 0) {
         printf("Longest: %s",longest);
+        printf("Length of input: %d", strlen(longest));
     }
 
     return 0;
