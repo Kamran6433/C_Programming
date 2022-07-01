@@ -5,6 +5,7 @@ int power(int a, int b);
 int timesByItself(int a[]);
 float dividingBy5(float a[]);
 void helloWorld();
+void hi();
 
 int main(void) {
 
@@ -17,6 +18,7 @@ int main(void) {
     a = 2;
     d = 10;
     printf("Power function: %d", power(a, d));
+    hi();
 
 }
 
@@ -88,5 +90,11 @@ float dividingBy5(float a[]) {
 void helloWorld() {
 
     printf("Hello World!\n");
+
+}
+
+void hi() {
+
+    printf("Dont go anywhere!");
 
 }
