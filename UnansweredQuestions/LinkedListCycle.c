@@ -37,6 +37,13 @@ int main() {
     // This line of code links the link of the head node to the address of the current node
     // making head accessible to current in this singlely linked list. 
     head->link = current;
-    return 0;
 
+    // There is an issue with this method.
+    // What if we had to make 20 nodes? this method isn't efficient.
+    struct Node *current2 = malloc(sizeof(struct Node));
+    current2->data = 3;
+    current2->link = NULL;
+    current->link = current2;
+    return 0;
+    
 }
