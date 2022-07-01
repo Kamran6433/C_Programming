@@ -39,11 +39,23 @@ int main() {
     head->link = current;
 
     // There is an issue with this method.
-    // What if we had to make 20 nodes? this method isn't efficient.
-    struct Node *current2 = malloc(sizeof(struct Node));
-    current2->data = 3;
-    current2->link = NULL;
-    current->link = current2;
+    // What if we had to make 20 nodes? this method isn't efficient and wastes memory.
+    // struct Node *current2 = malloc(sizeof(struct Node));
+    // current2->data = 3;
+    // current2->link = NULL;
+    // current->link = current2;
+
+    // Here is the optimum solution to adding extra nodes.
+    // I am simply reusing current to create another node and allocate the memory for it.
+    // Then I link the 2nd and 3rd node by using head->link->link = current;
+    current = malloc(sizeof(struct Node));
+    current->data = 3;
+    current->link = NULL;
+
+    head->link->link = current; 
+    // head->link = the link between 1st and 2nd
+    // head->link->link = the link between 2nd and 3rd so we assign
+    // assign the address of current to it to link them together.
     return 0;
-    
+
 }
