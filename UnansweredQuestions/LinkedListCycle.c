@@ -13,6 +13,26 @@
  * };
  */
 
+bool hasCycle(struct ListNode *head) {
+
+    struct ListNode slow = head;
+    struct listNode fast = head->next;
+
+    while (slow != fast) {
+        
+        if (fast == NULL || fast->next == NULL) {
+            return false;
+        }
+
+        slow = slow->next;
+        fast = fast->next->next;
+
+    }
+
+    return true;
+    
+}
+
 struct Node {
     int data;
     struct Node *link;
