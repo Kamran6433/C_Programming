@@ -12,6 +12,7 @@ float z = 2.4;
 // & operator means the address of.
 // * means the value at the address (Also known as Dereferencing).
 // * accesses the object the pointer points to.
+// *pointer means Value of Pointer
 
 // This is stating that the address(&) of x is to be stored in pointer1.
 pointer1 = &x;
@@ -22,6 +23,8 @@ pointer1 = &x;
 
 // creating an integer variable called var(value = 10) and pointer4(value = address of var).
 int var = 10, *pointer4 = &var;
+// *pointer4 means Value of pointer4.
+// It says go to the address of var and retrieve the value of var.
 
 //** USE POINTERSPIC.JPEG FOR A PICTORIAL REPRESENTATION OF ^ **//
 
