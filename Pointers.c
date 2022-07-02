@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 // Pointers are special variables which holds adresses of objects.
 int *pointer1;
@@ -23,9 +23,20 @@ pointer1 = &x;
 
 // creating an integer variable called var(value = 10) and pointer4(value = address of var).
 int var = 10, *pointer4 = &var;
+// DATA TYPE: int   DATA TYPE: int
+// NAME: var        NAME: pointer4
+// VALUE: 10        VALUE: n
+// ADDRESS: n       ADDRESS: m
+//** USE POINTERSPIC.JPEG FOR A PICTORIAL REPRESENTATION OF ^ **//
+
 // *pointer4 means Value of pointer4.
 // It says go to the address of var and retrieve the value of var.
 
-//** USE POINTERSPIC.JPEG FOR A PICTORIAL REPRESENTATION OF ^ **//
-
 // }
+
+main() {
+
+    // This will be used to tinker around pointer to get a better understanding of pointers.
+    printf("%d" *pointer4);
+
+}
