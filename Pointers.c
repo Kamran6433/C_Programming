@@ -15,7 +15,7 @@ float z = 2.4;
 // *pointer means Value of Pointer
 
 // This is stating that the address(&) of x is to be stored in pointer1.
-pointer1 = &x;
+// pointer1 = &x;
 
 // ------------------------------------------------------------ //
 
@@ -37,6 +37,6 @@ int var = 10, *pointer4 = &var;
 main() {
 
     // This will be used to tinker around pointer to get a better understanding of pointers.
-    printf("%d" *pointer4);
+    printf("%d", *pointer4);
 
 }
