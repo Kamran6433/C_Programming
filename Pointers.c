@@ -12,7 +12,7 @@ float z = 2.4;
 // & operator means the address of.
 // * means the value at the address (Also known as Dereferencing).
 // * accesses the object the pointer points to.
-// *pointer means Value of Pointer
+// *pointer means Value of Pointer.
 
 // This is stating that the address(&) of x is to be stored in pointer1.
 // IT IS IMPORTANT TO INITIALISE POINTERS LIKE THIS:
@@ -58,7 +58,7 @@ int main(void) {
     p = &i;
     printf("p = &i;\n");
     // This assigns q's pointer value to p's pointer value
-    // (*p = 10, *q = 10) (p = same address as q, q = same address as p)
+    // (*p = 10, *q = 10) (p = same address as q, q = same address as p).
     q = p;
     printf("q = p;\n");
     printf("Value of p (*p): %d  Value of q (*q): %d\n", *p, *q);
