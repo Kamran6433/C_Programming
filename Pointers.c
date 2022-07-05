@@ -37,6 +37,9 @@ int var = 10, *pointer4 = &var;
 int main(void) {
 
     // This will be used to tinker around pointer to get a better understanding of pointers.
-    printf("Pointer4: %d", *pointer4);
+    printf("*Pointer4 (Grabbing the VALUE of the pointer): %d\n", *pointer4);
+    printf("var (Grabbing the VALUE of var): %d\n", var);
+    printf("&Pointer4 (Grabbing the ADDRESS of the pointer): %d\n", &pointer4);
+    printf("&var (Grabbing the ADDRESS of var): %d\n", &var);
 
 }
