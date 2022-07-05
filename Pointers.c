@@ -15,6 +15,7 @@ float z = 2.4;
 // *pointer means Value of Pointer
 
 // This is stating that the address(&) of x is to be stored in pointer1.
+// IT IS IMPORTANT TO INITIALISE POINTERS LIKE THIS:
 // pointer1 = &x;
 
 // ------------------------------------------------------------ //
@@ -36,16 +37,29 @@ int var = 10, *pointer4 = &var;
 
 int main(void) {
 
-    // This will be used to tinker around pointer to get a better understanding of pointers.
+    // This will be used to tinker around pointers to get a better understanding of pointers.
     printf("\n*Pointer4 (Grabbing the VALUE of the pointer): %d\n", *pointer4);
     printf("var (Grabbing the VALUE of var): %d\n", var);
     printf("Here the values are the same because var is 10 and pointer4 points to var's value.\n\n");
+    
     printf("&Pointer4 (Grabbing the ADDRESS of the pointer): %d\n", &pointer4);
     printf("&var (Grabbing the ADDRESS of var): %d\n", &var);
     printf("As you can see here, the address of pointer4 and var are directly next to (Above or below in the stack) each other.\n\n");
+    
     *pointer4 = 99;
     printf("*pointer4 = 99;\n");
     printf("printf(%%d, var) = %d\n", var);
     printf("As you can see here, I have changed the value of the var that pointer4 points to, and I have changed the value through the pointer itself.\n\n");
 
+    int i = 10;
+    printf("int i = 10;\n");
+    int *p, *q;
+    printf("int *p, *q;\n");
+    p = &i;
+    printf("p = &i;\n");
+    q = p;
+    printf("q = p;\n");
+    printf("*p: %d  *q: %d\n", *p, *q);
+    printf("p: %d  q: %d\n", p, q);
+    printf("&p: %d  &q: %d\n", &p, &q);
 }
