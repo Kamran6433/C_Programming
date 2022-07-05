@@ -57,9 +57,22 @@ int main(void) {
     printf("int *p, *q;\n");
     p = &i;
     printf("p = &i;\n");
+    // This assigns q's pointer value to p's pointer value
+    // (*p = 10, *q = 10) (p = same address as q, q = same address as p)
     q = p;
     printf("q = p;\n");
-    printf("*p: %d  *q: %d\n", *p, *q);
-    printf("p: %d  q: %d\n", p, q);
-    printf("&p: %d  &q: %d\n", &p, &q);
+    printf("Value of p (*p): %d  Value of q (*q): %d\n", *p, *q);
+    printf("Where p is pointing to (p): %d  Where q is pointing to (q): %d\n", p, q);
+    printf("Address of the pointer p (&p): %d  Address of the pointer q (&q): %d\n\n", &p, &q);
+
+    int j = 20;
+    int *h;
+    h = &j;
+    printf("h = &j;\n");
+    printf("Value of h (*h): %d\n", *h);
+    *h = *p;
+    printf("*h = *p;\n");
+    printf("I am assinging the value of h to be hte value of p.")
+    printf("Value of p (*p): %d  Value of h (*h): %d\n", *p, *h);
+
 }
