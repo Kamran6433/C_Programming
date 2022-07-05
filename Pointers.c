@@ -66,13 +66,19 @@ int main(void) {
     printf("Address of the pointer p (&p): %d  Address of the pointer q (&q): %d\n\n", &p, &q);
 
     int j = 20;
+    printf("int j = 20;\n");
     int *h;
+    printf("int *h;\n");
     h = &j;
     printf("h = &j;\n");
     printf("Value of h (*h): %d\n", *h);
     *h = *p;
     printf("*h = *p;\n");
-    printf("I am assinging the value of h to be hte value of p.")
+    printf("I'm assigning the value of h to be the value of p.\n");
     printf("Value of p (*p): %d  Value of h (*h): %d\n", *p, *h);
+    // Bear in mind, h is a pointer pointing to j so it will have a different address to p/
+    // j is then changed from 20 to 10.
+    printf("Where p is pointing to (p): %d  Where h is pointing to (h): %d\n", p, h);
+    printf("Address of the pointer p (&p): %d  Address of the pointer h (&h): %d\n\n", &p, &h);
 
 }
