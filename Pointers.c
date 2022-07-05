@@ -45,7 +45,7 @@ int main(void) {
     printf("As you can see here, the address of pointer4 and var are directly next to (Above or below in the stack) each other.\n\n");
     *pointer4 = 99;
     printf("*pointer4 = 99;\n");
-    printf("printf(%%d, var) = %d", var);
-    printf("As you can see here, I have changed the value of the var that pointer4 points to through the pointer itself.\n\n");
+    printf("printf(%%d, var) = %d\n", var);
+    printf("As you can see here, I have changed the value of the var that pointer4 points to, and I have changed the value through the pointer itself.\n\n");
 
 }
