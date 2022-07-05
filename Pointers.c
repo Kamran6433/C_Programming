@@ -34,9 +34,9 @@ int var = 10, *pointer4 = &var;
 
 // }
 
-main() {
+int main(void) {
 
     // This will be used to tinker around pointer to get a better understanding of pointers.
-    printf("%d", *pointer4);
+    printf("Pointer4: %d", *pointer4);
 
 }
