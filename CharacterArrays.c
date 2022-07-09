@@ -8,9 +8,17 @@ char longest[MAXLINE]; // Longest line saved here.
 
 int getLine(void);
 void copy(void);
+int *findMid(int a[], int n);
 
 // Prints the longest input line.
 main() {
+
+    int a[] = {1, 2, 3, 4, 5};
+    // This is how to get the number of elements in the array.
+    int lengthOfArray = sizeof(a)/sizeof(a[0]); 
+    // The address which is returned by the function findMid will be stored in mid.
+    int *mid = findMid(a, lengthOfArray);
+    printf("Value of mid or the value of the function: %d", *mid);
 
     int length; // Current line length.
     extern int max;
@@ -29,10 +37,16 @@ main() {
     // If there was a line.
     if (max > 0) {
         printf("Longest: %s",longest);
-        printf("Length of input: %d", strlen(longest));
     }
 
     return 0;
+
+}
+
+// Random funtion to undertsand returning pointers from a function.
+int *findMid(int a[], int n) {
+
+    return &a[n/2];
 
 }
 
