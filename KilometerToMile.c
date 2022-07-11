@@ -5,15 +5,15 @@ float *conversionM2K(float mile);
 
 float *conversionK2M(float kilometer) {
 
-    float answer = kilometer * 0.621371;
-    return &answer;
+    float kilo = kilometer * 0.621371;
+    return &kilo;
 
 }
 
 float *conversionM2K(float mile) {
 
-    float answer = mile * 1.60934;
-    return &answer;
+    float mil = mile * 1.60934;
+    return &mil;
 
 }
 
