@@ -25,7 +25,7 @@ main(void) {
     float *answer1 = conversionK2M(k);
     float *answer2 = conversionM2K(m);
 
-    printf("Kilometers %f to miles: %f", k, *answer1);
-    printf("miles %f to kilometers: %f", m, *answer2);
+    printf("Kilometers %f to miles: %f\n", k, *answer1);
+    printf("miles %f to kilometers: %f\n", m, *answer2);
 
 }
