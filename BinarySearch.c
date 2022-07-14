@@ -12,10 +12,17 @@ int binarySearch(int target, int array[], int n) {
 
         mid = (low + high) / 2;
         if (target < array[mid]) {
-            high = mid -1;
+            high = mid - 1;
+        }
+        else if (target > array[mid]) {
+            low = mid + 1;
+        }
+        else {
+            return mid;
         }
 
     }
 
+    return -1
 
 }
