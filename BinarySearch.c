@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// This algorithm has O(logn) time complexity becuase the search is halved eahc iteration.
+// This algorithm has O(logn) time complexity becuase the search is halved after each iteration.
 int binarySearch(int target, int array[], int n) {
 
     int low, mid, high;
