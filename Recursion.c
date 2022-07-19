@@ -20,6 +20,7 @@ void printd(int n) {
         n = -n;
     }
     if(n / 10) {
+        printf("Number has been divided by 10.\n")
         printd(n/10);
     }
     
