@@ -100,4 +100,15 @@ int main(void) {
     // its the same as saying a.x it can also be written like pointer->x.
     printf("Pointer Demonstration with structures\nx: %d, y: %d\n", (*pointer).x, (*pointer).y);
 
+    //-----------------------------------------------------------------------------------
+
+    // This was just a test to see if this is allowed and it is allowed.
+    struct test {
+        int x, y, z;
+    };
+
+    struct test one = {1, 2, 3};
+
+    printf("%d %d %d", one.x, one.y, one.z);
+
 }
