@@ -1,4 +1,5 @@
 #include <stdio.h>
+#pragma pack(1)
 
 // A structure is a user defined data type that can be used to group elements of 
 // different types together into a SINGLE TYPE.
@@ -54,6 +55,8 @@ int main(void) {
     // (Only availabe within this main function).
     struct car bmw;
     // Structure Padding Neso Academy on youtube:
+    // Turn off strucutre padding on the top by commenting the #pragma pack(1) and 
+    // then run the program and observe the differences of the size of the car structure.
     printf("Size in bytes of char: %lu\n", sizeof(char));
     printf("Size in bytes of char: %lu\n", sizeof(char));
     printf("Size in bytes of int: %lu\n", sizeof(int));
