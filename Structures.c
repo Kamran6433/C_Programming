@@ -66,4 +66,11 @@ int main(void) {
     struct car lamborghini = {.cityMileage = 4.3, .fuelType = "Petrol", .engine = "V10 Engine", .seatingCap = 2, .fuelTankCap = 60};
     printf("Lamboghini: %s %s %f %d %d\n", lamborghini.fuelType, lamborghini.engine, lamborghini.cityMileage, lamborghini.seatingCap, lamborghini.fuelTankCap);
 
+    struct car cars[3];
+    // Im only going to change the seating capacity to save time.
+    cars[0].seatingCap = 1000;
+    cars[1].seatingCap = 2000;
+    cars[2].seatingCap = 0;
+    printf("Seating capacity of each car in the array: %d %d %d", cars[0].seatingCap, cars[1].seatingCap, cars[2].seatingCap);
+
 }
