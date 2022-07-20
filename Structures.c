@@ -54,14 +54,15 @@ int main(void) {
     // (Only availabe within this main function).
     struct car bmw;
     // Structures work very similarly to objects.
-    // Here I declared a car structure called bugatti and initilaised it with its values.
+    // Here I declared a car structure called bugatti and initilaised it with it's values.
     struct car bugatti = {"V10 Engine", "Petrol", 40, 2, 6.3};
     printf("bugatti Engine: %s\n", bugatti.engine);
     printf("bugatti Fuel: %s\n", bugatti.fuelType);
     printf("bugatti Fuel capacity: %d\n", bugatti.fuelTankCap);
     printf("bugatti Seating capacity: %d\n", bugatti.seatingCap);
     printf("bugatti city mileage: %0.2fkmpl\n", bugatti.cityMileage);
-    // You're also able to assign values to the memebers in any order:
+    // You're also able to assign values to the members in any order:
+    // This is called designated initialisation. Here the order doesn't matter.
     struct car lamborghini = {.cityMileage = 4.3, .fuelType = "Petrol", .engine = "V10 Engine", .seatingCap = 2, .fuelTankCap = 60};
     printf("Lamboghini: %s %s %f %d %d\n", lamborghini.fuelType, lamborghini.engine, lamborghini.cityMileage, lamborghini.seatingCap, lamborghini.fuelTankCap);
 
