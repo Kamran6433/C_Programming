@@ -13,5 +13,6 @@ int main(void) {
     // The preprocessor saw this function MIN before the compiler did.
     // The preprocessor replaced line 15 to printf("&d\n", (21 < 888 ? 21 : 888));
     printf("%d\n", MIN(21, 888));
+    // Preprocessing can be used to make functions faster adn optimise the code.
 
 }
