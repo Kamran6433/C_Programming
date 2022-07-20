@@ -5,7 +5,7 @@ void printd(int n);
 int main(void) {
 
     int n;
-    n = 15000;
+    n = 1200;
 
     printd(n);
 
@@ -16,14 +16,15 @@ int main(void) {
 void printd(int n) {
 
     if(n < 0) {
+        printf("Number is less than 0.\n");
         putchar('-');
         n = -n;
     }
-    if(n / 10) {
+    else if(n / 10) {
         printf("Number has been divided by 10.\n");
         printd(n/10);
     }
     
-    putchar(n%10+'0');
+    putchar((n % 10) + '0');
 
 }
