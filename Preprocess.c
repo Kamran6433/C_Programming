@@ -8,6 +8,8 @@
 
 int main(void) {
 
+    // This prints out 21 because 21 is the smallest and 
+    // the value thats returned by the function MIN.
     printf("%d\n", MIN(21, 888));
 
 }
