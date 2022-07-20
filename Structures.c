@@ -53,6 +53,13 @@ int main(void) {
     // This structure is the same car structure but declared locally 
     // (Only availabe within this main function).
     struct car bmw;
+    // Structure Padding Neso Academy on youtube:
+    printf("Size in bytes of char: %lu\n", sizeof(char));
+    printf("Size in bytes of char: %lu\n", sizeof(char));
+    printf("Size in bytes of int: %lu\n", sizeof(int));
+    printf("Size in bytes of int: %lu\n", sizeof(int));
+    printf("Size in bytes of float: %lu\n", sizeof(float));
+    printf("Size in bytes of car: %lu\n", sizeof(bmw));
     // Structures work very similarly to objects.
     // Here I declared a car structure called bugatti and initilaised it with it's values.
     struct car bugatti = {"V10 Engine", "Petrol", 40, 2, 6.3};
@@ -88,6 +95,6 @@ int main(void) {
 
     // (*pointer).x is dereferencing pointer then grabbing its value. 
     // its the same as saying a.x it can also be written like pointer->x.
-    printf("Pointer Demonstration wiht structures\nx: %d, y: %d\n", (*pointer).x, (*pointer).y);
+    printf("Pointer Demonstration with structures\nx: %d, y: %d\n", (*pointer).x, (*pointer).y);
 
 }
