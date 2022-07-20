@@ -2,7 +2,7 @@
 #pragma pack(1)
 
 // A structure is a user defined data type that can be used to group elements of 
-// different types together into a SINGLE TYPE.
+// different types (char, int, float) together into a SINGLE TYPE.
 
 // Structure gives us the power to define our own data types.
 
@@ -55,7 +55,7 @@ int main(void) {
     // (Only availabe within this main function).
     struct car bmw;
     // Structure Padding Neso Academy on youtube:
-    // Turn off strucutre padding on the top by commenting the #pragma pack(1) and 
+    // Turn off structure padding on the top by commenting the #pragma pack(1) and 
     // then run the program and observe the differences of the size of the car structure.
     printf("Size in bytes of char: %lu\n", sizeof(char));
     printf("Size in bytes of char: %lu\n", sizeof(char));
@@ -97,7 +97,7 @@ int main(void) {
     struct abc *pointer = &a;
 
     // (*pointer).x is dereferencing pointer then grabbing its value. 
-    // its the same as saying a.x it can also be written like pointer->x.
+    // it's the same as saying a.x it can also be written like pointer->x.
     printf("Pointer Demonstration with structures\nx: %d, y: %d\n", (*pointer).x, (*pointer).y);
 
     //-----------------------------------------------------------------------------------
