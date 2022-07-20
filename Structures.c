@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+// A structure is a user defined data type that can be used to group elements of 
+// different types together into a single type.
+
+// Structure gives us the power to define our own data types.
+
 // Car 1 specifications:
 
 // Engine: DDis 190 Engine
