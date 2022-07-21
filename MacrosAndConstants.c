@@ -27,5 +27,7 @@ int main(void) {
     // Here i will show you why i used '#' in the value of the macro above.
     MULTIPLY(firstInt, secondInt);
     // Run this code and see the output of the final macro function MULTIPLY.
+    // The '#X' is swapped with the actual ARGUMENTS (firstInt and secondInt) when 
+    // the function is called and prints. 
 
 }
