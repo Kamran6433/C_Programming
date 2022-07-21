@@ -8,7 +8,7 @@
 // NOTE: All of these are constants as the user isn't able to change the values of these constants(macros).
 // In the example below I am using '#' to get the parameters replaced by the actual 
 // arguments once this code runs.  
-#define MULTIPLY(X, Y) printf(#X "*" #Y "is %d\n", X * Y)
+#define MULTIPLY(X, Y) printf(#X " * " #Y " is %d\n", X * Y)
 
 int main(void) {
 
@@ -23,5 +23,9 @@ int main(void) {
     printf("before SWAP is called -- firstInt: %d secondInt: %d\n", firstInt, secondInt);
     SWAP(firstInt, secondInt);
     printf("after SWAP is called -- firstInt: %d secondInt: %d\n", firstInt, secondInt);
+
+    // Here i will show you why i used '#' in the value of the macro above.
+    MULTIPLY(firstInt, secondInt);
+    // Run this code and see the output of the final macro function MULTIPLY.
 
 }
