@@ -28,6 +28,10 @@ int main(void) {
     MULTIPLY(firstInt, secondInt);
     // Run this code and see the output of the final macro function MULTIPLY.
     // The '#X' is swapped with the actual ARGUMENTS (firstInt and secondInt) when 
-    // the function is called and prints. 
+    // the function is called and prints. This can only be done using macros.
+
+    // The final lesson here is the const key word which is very simple.
+    const int x = 45;
+    // This works exactly the way you think it does, The variable x is not allowed to be changed form 45 to anything else.
 
 }
