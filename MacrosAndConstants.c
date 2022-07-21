@@ -9,3 +9,13 @@
 // In the example below I am using '#' to get the parameters replaced by the actual 
 // arguments once this code runs.  
 #define MULTIPLY(X, Y) printf(#X "*" #Y "is %d\n", X * Y)
+
+int main(void) {
+
+    printf("%0.6f\n", PI);
+    // What is happening inside the code is that the preprocessor will convert the 
+    // macro 'PI' will be replaced with the value i've given it which is 
+    // 3.14159 so the code will look like this BEFORE compilation.
+    // printf("%0.6f\n", 3.14159);
+
+}
