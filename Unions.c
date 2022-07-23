@@ -24,6 +24,15 @@ int main(void) {
     printf("float z = %f\n", example.z);
     printf("Here the memory location of x and y are the same so if I change the value of x to be 77, y will also share that value 77 and since its a char, the char value at 77 is M as printed above.\n");
 
+    // ------------------------------------------------------------------------------------
+
+    // Let now talk about the size of the Union. Since they all share the same memory location
+    // It would be wise to use enough size to cater for the largest member.
+    // So the size of the union is taken according to the size of the LARGEST member
+    // of the union.
+
+    printf("size of the union \"example\": %ld bytes", sizeof(example));
+
     return 0;
 
 }
