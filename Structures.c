@@ -60,7 +60,8 @@ int main(void) {
 
     // Structure padding is the addition of memory to a structure to lower its cycle count and make the process faster. Howveer is wastes memory.
     // Structure packing is the oppposite and is when the compiler squeezes the bytes togther so use up as less memeory as possible but sacrificing cycle counts which makes the program slowler.
-    // Turn off structure padding on the top by commenting the #pragma pack(1) OR by typing 
+    // Turn off structure padding on the top by commenting the #pragma pack(1) OR by typing __attribute__((__packed__)) to pack the bytes togther without any padding.
+    // #pragma pack(1) is global whereas __attribute__((__packed__)) is local.
     // then run the program and observe the differences of the size of the car structure.
     printf("Size in bytes of char: %lu\n", sizeof(char));
     printf("Size in bytes of char: %lu\n", sizeof(char));
