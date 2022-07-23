@@ -18,9 +18,11 @@ int main(void) {
     
     // In union, members will share the smae memory location.
     // If a change is made to one member then it will be reflected to other members as well.
-    example.x = 77;
-    printf("x = %d\n", example.x);
-    printf("y = %c\n", example.y);
+    example.x = 77.0;
+    printf("int x = %d\n", example.x);
+    printf("char y = %c\n", example.y);
+    printf("float z = %f\n", example.z);
+    printf("Here the memory location of x and y are the same so if I change the value of x to be 77, y will also share that value 77 and since its a char, the char value at 77 is M as printed above.\n");
 
     return 0;
 
