@@ -11,6 +11,7 @@ union example {
 int main(void) {
 
     union example example = {2, "a", 1.2};
-    printf("&x: %p, &y: %p, &z: %p\n", &example.x, &example.y, &example.z);
+    printf("Address of x: %p, Address of y: %p, Address of z: %p\n", &example.x, &example.y, &example.z);
+    printf("As you can see, once the program is executed, all the members of the union share the exact same address.");
 
 }
