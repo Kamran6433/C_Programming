@@ -31,7 +31,10 @@ int main(void) {
     // So the size of the union is taken according to the size of the LARGEST member
     // of the union.
 
-    printf("size of the union \"example\": %ld bytes", sizeof(example));
+    printf("size of int: %ld bytes\n", sizeof(int));
+    printf("size of char: %ld bytes\n", sizeof(char));
+    printf("size of float: %ld bytes\n", sizeof(float));
+    printf("The largest size of my union members is 4 bytes and therefore...\nsize of the union \"example\": %ld bytes\n", sizeof(example));
 
     return 0;
 
