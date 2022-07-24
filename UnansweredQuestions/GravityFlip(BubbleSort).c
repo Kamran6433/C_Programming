@@ -6,31 +6,33 @@
 
 // Given the initial configuration of the cubes in the box, find out how many cubes are in each of the n columns after Bob switches the gravity.
 
-void flip(char d, const int *array, size_t n, int *result) {
+void flip(char d, int *array, size_t n, int *result) {
 
     if (d == 'L') {
         // I will be using a bubble sort to compare two elements to see which one is larger in order to swap them and put them in an ascending order.
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < (n - 1 - i); j++) {
-                if (array[j] < array[j + 1]) {
-                    int temp = array[j];
-                    result[j] = array[j + 1];
-                    result[j + 1] = temp;
+            for (int j = i; j < n; j++) {
+                if (array[i] < array[j]) {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
                 }
             }
+            result[i] = array[i];
         }
     }
 
     if (d == 'R') {
         // I will be using a bubble sort to compare two elements to see which one is larger in order to swap them and put them in an descending order.
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < (n - 1 - i); j++) {
-                if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    result[j] = array[j + 1];
-                    result[j + 1] = temp;
+            for (int j = i; j < n; j++) {
+                if (array[i] > array[j]) {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
                 }
             }
+            result[i] = array[i];
         }
     }
  
