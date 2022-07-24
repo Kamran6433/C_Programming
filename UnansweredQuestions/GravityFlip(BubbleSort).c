@@ -9,6 +9,7 @@
 void flip(char d, const int *array, size_t n, int *result) {
 
     if (d == 'L') {
+        // I will be using a bubble sort to compare two elements to see which one is larger to swap them and put them in an ascending order.
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < (n - 1); j++) {
                 if (array[j] < array[j + 1]) {
@@ -21,6 +22,7 @@ void flip(char d, const int *array, size_t n, int *result) {
     }
 
     if (d == 'R') {
+        // I will be using a bubble sort to compare two elements to see which one is larger to swap them and put them in an descending order.
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < (n - 1); j++) {
                 if (array[j] > array[j + 1]) {
