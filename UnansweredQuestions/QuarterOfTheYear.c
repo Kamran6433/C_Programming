@@ -18,3 +18,9 @@ int quarter_of(int month) {
     }
 
 }
+
+// A quicker version.
+
+int quarter_of(int month) {
+    return (month + 2) / 3;
+}
