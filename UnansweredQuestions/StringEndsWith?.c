@@ -9,13 +9,21 @@ bool solution(const char *string, const char *ending) {
         return true;
     }
 
+    if (string == ending) {
+        return true;
+    }
+
+    if (strlen(string) < strlen(ending)) {
+        return false;
+    }
+
     char *copyOfEnding2;
     char *copyOfEnding1;
-    for (int i = strlen(string); i < ((strlen(string) + 1) && i > ((strlen(string) - 3)); i--) {
+    for (int i = strlen(string); i < ((strlen(string) + 1)) && i > ((strlen(string) - 3)); i--) {
         copyOfEnding2 = string[i];
     }
 
-    for (int i = strlen(string); i < ((strlen(string) + 1) && i > ((strlen(string) - 2)); i--) {
+    for (int i = strlen(string); i < ((strlen(string) + 1)) && i > ((strlen(string) - 2)); i--) {
         copyOfEnding1 = string[i];
     }
 
