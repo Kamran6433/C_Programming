@@ -16,11 +16,7 @@
 float heron(int a, int b, int c) {
     
     float s = ((float) a + (float) b + (float) c) / 2;
-
-    float answer = s * (s - a) * (s - b) * (s - c);
-  
-    float area = sqrt(answer);
-
-    return area;
+    float answer = sqrt(s * (s - a) * (s - b) * (s - c));
+    return answer;
 
 }
