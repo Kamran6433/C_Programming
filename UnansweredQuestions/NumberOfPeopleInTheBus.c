@@ -21,11 +21,11 @@ int bus_terminus (size_t nb_stops, const short bus_stops[nb_stops][2]) {
     // I will need two for loops to access the entire 2D array.
     for (int i = 0; i < nb_stops; i++) {
         for (int j = 0; j < 2; j++) {
-            if (j == 0) {
-                bus + bus_stops[i][j];
+            if (j != 1) {
+                bus += bus_stops[i][j];
             }
             else {
-                bus - bus_stops[i][j];
+                bus -= bus_stops[i][j];
             }
         }
     }
