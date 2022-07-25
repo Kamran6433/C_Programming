@@ -6,11 +6,18 @@
  
 // where
 
-// s=(a + b + c)/2​
+// s = (a + b + c)/2​
  
 // Output should have 2 digits precision.
+
+#include <math.h>
+#include <stdio.h>
+
 float heron(int a, int b, int c) {
 
-    //  <----  hajime!
+    float s = (a + b + c) / 2;
 
+    float answer = sqrt(s * ((s - a) * (s - b) * (s - c)));
+
+    return answer;
 }
