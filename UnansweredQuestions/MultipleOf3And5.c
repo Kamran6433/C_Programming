@@ -9,9 +9,14 @@ int solution(int number)
     int answer = 0;
     for (int i = 0; i < number; i++)
     {
-        if (i % 3 == 0) answer += i;
-        if (i % 5 == 0) answer += i;
-        if (i % 3 == 0 && i % 5 == 0) answer += i;
+        if (number > 0) {
+            if (i % 3 == 0) answer += i;
+            if (i % 5 == 0) answer += i;
+            if (i % 3 == 0 && i % 5 == 0) answer += i;
+        }
+        if (number < 0) {
+            return 0;
+        }
     }
     return answer;
 }
