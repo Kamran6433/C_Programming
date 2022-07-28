@@ -5,9 +5,13 @@
 int digital_root(int n) 
 {
     int x, sum = 0;
-    x = n % 10;
-    sum = sum + x;
-    n = n / 10;
-    if (n != 0) digital_root(n);
+
+    while (n > 0) 
+    {
+        x = n % 10;
+        sum = sum + x;
+        n = n / 10;
+        digital_root(n);
+    }
     return sum;
 }
