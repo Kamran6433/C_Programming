@@ -15,10 +15,10 @@ int find_odd (size_t length, const int array[length])
 {
   int answer = 0;
   int number = 0;
-  int *pointer = NULL;
+  int *pointer = array;
   for (int i = 0; i < length; i++) 
   {
-    for (int j = i + 1; j < length - 1; j++) 
+    for (int j = i + 1; j < length; j++) 
     {
         if (pointer[i] == array[j]) 
         {
@@ -31,4 +31,5 @@ int find_odd (size_t length, const int array[length])
         return answer;
     }
   }
+  return answer;
 }
