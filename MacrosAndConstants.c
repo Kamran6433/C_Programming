@@ -12,7 +12,7 @@
 
 int main(void) {
 
-    printf("%0.8f\n", PI);
+    printf("%0.10000f\n", PI);
     // What is happening inside the code is that the preprocessor will convert the 
     // macro 'PI' will be replaced with the value i've given it which is 
     // 3.14159 so the code will look like this BEFORE compilation.
