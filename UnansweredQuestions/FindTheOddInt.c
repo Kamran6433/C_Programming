@@ -25,6 +25,10 @@ int find_odd (size_t length, const int array[length])
             number += pointer[i];
         }
     }
-    if (number % 2 != 0) answer = number; return answer;
+    if (number % 2 != 0) 
+    {
+        answer = number; 
+        return answer;
+    }
   }
 }
