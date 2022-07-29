@@ -37,3 +37,27 @@ size_t duplicate_count(const char *text)
 }
 
 // Very close to the answer.
+
+// Here is someone elses answer that I have studied.
+int is_same(const char *c, const char *d) { 
+    return tolower(*c) == tolower(*d);
+}
+size_t duplicate_count(const char *text) {
+    const char *needle = "abcdefghijklmnopqrstuvwxyz0123456789";
+    const char *hay = text;
+    int count = 0; 
+    do { 
+        // is there one occurrence?
+        do if (is_same(hay, needle))
+            break;
+        while (*hay && hay++);
+        // does it occur at least once more?
+        do if (is_same(hay+1, needle))
+            break;
+        while(*hay && hay++);
+        if (*hay)
+            count++;
+        hay = text;
+    } while (*needle++);
+    return count;     
+}
