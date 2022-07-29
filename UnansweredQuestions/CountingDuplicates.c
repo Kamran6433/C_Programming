@@ -10,9 +10,26 @@
 // "ABBA" -> 2 # 'A' and 'B' each occur twice
 
 #include <stddef.h>
+#include <string.h>
 
-size_t duplicate_count(const char *text) {
+size_t duplicate_count(const char *text) 
+{
+    int answer = 0; 
+    int length = strlen(text);
+    char *copy = '\0';
+    strcpy(copy, text);
+    tolower(copy);
+    char *pointer = copy;
 
-    //  <----  hajime!
-
+    for (int i = 0; i < length; i++)
+    {
+        for (int j = i + 1; j < length - 1; j++)
+        {
+            if (pointer[i] == copy[j])
+            {
+                answer++;
+            }
+        }
+    }
+    return answer;
 }
