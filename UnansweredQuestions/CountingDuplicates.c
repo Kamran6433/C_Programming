@@ -14,22 +14,26 @@
 
 size_t duplicate_count(const char *text) 
 {
-    int answer = 0; 
+    int answer = 0;
+    char *temp;
     int length = strlen(text);
-    char *copy = '\0';
+    char copy[length];
     strcpy(copy, text);
-    tolower(copy);
     char *pointer = copy;
+    for(int i = 0; i < length; i++) copy[i] = tolower(copy[i]);
 
     for (int i = 0; i < length; i++)
     {
-        for (int j = i + 1; j < length - 1; j++)
+        for (int j = i + 1; j < length; j++)
         {
-            if (pointer[i] == copy[j])
+            if (pointer[i] == copy[j] && temp != copy[j])
             {
                 answer++;
+                temp = copy[j];
             }
         }
     }
     return answer;
 }
+
+// Very close to the answer.
