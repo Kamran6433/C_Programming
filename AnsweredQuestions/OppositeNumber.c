@@ -4,3 +4,10 @@ float opposite(float num)
 {
     return num = num * -1;
 }
+
+// Simpler solution
+
+float opposite(float num) 
+{
+  return -num;
+}
