@@ -7,7 +7,7 @@ float *pointer3;
 
 int x = 5;
 char y = 'A';
-float z = 2.4; 
+float z = 2.4;
 
 // & operator means the address of.
 // * means the value at the address (Also known as Dereferencing).
@@ -62,8 +62,9 @@ int main(void) {
     q = p;
     printf("q = p;\n");
     printf("Value of p (*p): %d  Value of q (*q): %d\n", *p, *q);
-    printf("Where p is pointing to (p): %d  Where q is pointing to (q): %d\n", p, q);
+    printf("Where p is pointing to (p): %d  Where q is pointing to (q): %d\n", p, q); 
     printf("Address of the pointer p (&p): %d  Address of the pointer q (&q): %d\n\n", &p, &q);
+    printf("Address of i: (&i): %d  Address of the pointer q (&q): %d\n\n", &i, &q);
 
     int j = 20;
     printf("int j = 20;\n");
@@ -80,5 +81,5 @@ int main(void) {
     // j is then changed from 20 to 10.
     printf("Where p is pointing to (p): %d  Where h is pointing to (h): %d\n", p, h);
     printf("Address of the pointer p (&p): %d  Address of the pointer h (&h): %d\n\n", &p, &h);
-
+    printf("Value of j (j): %d Address of the j (&p): %d\n", j, &j);
 }
